@@ -11,7 +11,7 @@ mysql_config_file='/etc/mysql/my.cnf'
 mailcatcher_config_file='/etc/init/mailcatcher.conf'
 
 IPADDR=$(/sbin/ifconfig eth0 | awk '/inet / { print $2 }' | sed 's/addr://')
-sed -i "s/^${IPADDR}.*//" hosts
+sed -i "s/^${IPADDR}.*//" /etc/hosts
 echo $IPADDR ubuntu.localhost >> /etc/hosts			# Just to quiet down some error messages
 
 # Update the server
