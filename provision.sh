@@ -85,6 +85,9 @@ EOL
 echo "sendmail_path = /usr/bin/env $(which catchmail) -f webmaster@localhost" | tee /etc/php5/mods-available/mailcatcher.ini
 php5enmod mailcatcher
 
+# Remove default index.html
+rm /var/www/html/index.html
+
 # Start service
 service apache2 restart
 service mysql restart
