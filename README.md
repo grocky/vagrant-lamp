@@ -30,7 +30,7 @@ That is pretty simple.
 ### Connecting
 
 #### Apache
-The Apache server is available at <http://localhost>
+The Apache server is available at <http://192.168.10.10>
 
 #### MySQL
 Externally the MySQL server is available at port 33060, and when running on the VM it is available as a socket or at port 3306 as usual.
@@ -38,12 +38,12 @@ Username: root
 Password: root
 
 #### PhpMyadmin
-PhpMyadmin is available at <http://localhost/phpmyadmin>
+PhpMyadmin is available at <http://192.168.10.10/phpmyadmin>
 Username: root
 Password: root
 
 #### Mailcatcher
-Mailcatcher is available at <http://localhost:1080>
+Mailcatcher is available at <http://192.168.10.10:1080>
 
 Technical Details
 -----------------
@@ -73,5 +73,5 @@ config.vm.provider "virtualbox" do |vb|
 end
 ```
 
-####Screenshot Of Localhost
+####Screenshot Of 192.168.10.10
 ![ScreenShot](http://i.imgur.com/EDHyAdM.png)
